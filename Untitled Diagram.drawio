@@ -1,1 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2023-01-22T06:51:26.086Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.7.4" etag="_NpkAnX7HwYy6F3rZBIv" type="github"><diagram id="XcACTM1fnx8MsUZFHVDI">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-11-16T06:44:51.139Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="7Jl3iv8Byg4Ic23la74e" version="21.5.2" type="github">
+  <diagram id="XcACTM1fnx8MsUZFHVDI" name="Page-1">
+    <mxGraphModel dx="1489" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2dUm0IqJ99PUmUajHs-Z-1" target="2dUm0IqJ99PUmUajHs-Z-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-1" value="用户点击URL：&lt;br&gt;koolearn://com.koolearn.app:8080/page?target_page=practice&amp;amp;product_id=23441" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="140" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2dUm0IqJ99PUmUajHs-Z-4" target="2dUm0IqJ99PUmUajHs-Z-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-4" value="唤起原生App对应页面：&lt;br&gt;SchemeFilterActivity" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="250" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2dUm0IqJ99PUmUajHs-Z-7" target="2dUm0IqJ99PUmUajHs-Z-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-7" value="SchemeFilterActivity拿到参数：&lt;br&gt;通过target_page区分要跳到哪个activity" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="350" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2dUm0IqJ99PUmUajHs-Z-9" target="2dUm0IqJ99PUmUajHs-Z-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-9" value="SchemeFilterActivity拿到activity需要的参数：&lt;br&gt;如果跳转的activity需要额外参数，则继续获取参数" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="450" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2dUm0IqJ99PUmUajHs-Z-11" target="2dUm0IqJ99PUmUajHs-Z-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-18" value="不需要登录" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2dUm0IqJ99PUmUajHs-Z-14">
+          <mxGeometry x="-0.037" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-11" value="判断是否需要登录等前置操作" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="550" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-13" value="跳转登录" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="690" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-15" value="直接跳转对应页面" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="690" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2dUm0IqJ99PUmUajHs-Z-11" target="2dUm0IqJ99PUmUajHs-Z-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="620" as="sourcePoint" />
+            <mxPoint x="605" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-17" value="需要登录" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2dUm0IqJ99PUmUajHs-Z-16">
+          <mxGeometry x="0.184" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2dUm0IqJ99PUmUajHs-Z-13" target="2dUm0IqJ99PUmUajHs-Z-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="415" y="620" as="sourcePoint" />
+            <mxPoint x="245" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2dUm0IqJ99PUmUajHs-Z-20" value="登录成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2dUm0IqJ99PUmUajHs-Z-19">
+          <mxGeometry x="0.184" y="-1" relative="1" as="geometry">
+            <mxPoint x="-32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
